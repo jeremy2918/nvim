@@ -30,7 +30,7 @@ return require("packer").startup(
         -- Dev icons
         use {"ryanoasis/vim-devicons"}
         -- Autoformat
-        use {"Chiel92/vim-autoformat"}
+        use {"sbdchd/neoformat"}
         -- Language server client
         use {"neovim/nvim-lspconfig"}
         -- Auto completion
