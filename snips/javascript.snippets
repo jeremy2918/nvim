@@ -22,6 +22,10 @@ snippet impd "import destructure" b
 import { $2 } from '$1';
 endsnippet
 
+snippet dst "destructure" b
+const { $2 } = ${1:obj};
+endsnippet
+
 snippet af "anonymous function" b
 (${1:props}) => $2
 endsnippet
