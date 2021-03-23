@@ -1,6 +1,6 @@
  -- Check if packer is installed (~/local/share/nvim/site/pack)
 
- local packer_exists = pcall(vim.cmd, [[packadd packer.nvim]])
+local packer_exists = pcall(vim.cmd, [[packadd packer.nvim]])
 return require("packer").startup(
     function()
         -- Plugin Manager
@@ -20,9 +20,10 @@ return require("packer").startup(
         -- Color codes highlighting
         use {"norcalli/nvim-colorizer.lua"}
         -- Buffers config
-        use {"akinsho/nvim-bufferline.lua"}
+        use {"romgrk/barbar.nvim"}
         -- Explorer
-        use {"kyazdani42/nvim-tree.lua"}
+        use {"preservim/nerdtree"}
+		use {"Xuyuanp/nerdtree-git-plugin"}
         -- Better syntax highlighting
         use {"nvim-treesitter/nvim-treesitter"}
         -- Display indentation level
