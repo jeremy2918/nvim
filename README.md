@@ -28,3 +28,7 @@ git clone https://github.com/wbthomason/packer.nvim\
 ### Design
 
 ![Design](./images/design.png)
+
+### TODO
+
+- Add snippets support
