@@ -48,5 +48,9 @@ return require("packer").startup(
 		use {"terrortylor/nvim-comment"}
 		-- Start Screen
 		use {"mhinz/vim-startify"}
+		-- Emmet
+		use {"mattn/emmet-vim"}
+		-- Snippets
+		use {"SirVer/ultisnips"}
     end
 )
