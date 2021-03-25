@@ -1,12 +1,12 @@
 <h1 align="center">NeoVim</h1>
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Neovim-logo.svg" height="100" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Neovim-logo.svg" height="150" />
 
   <p>Custom, easy-to-install NeoVim configuration :rocket:</p>
 </div>
 
-### Requeriments
+### Installation
 
 :pushpin: You need [brew](https://brew.sh/) installed to be able to install most of the tools for this config.
 
@@ -31,4 +31,4 @@ git clone https://github.com/wbthomason/packer.nvim\
 
 ### TODO
 
-- Add snippets support
+- Add snippets to autocompletion menu
