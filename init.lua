@@ -1,5 +1,6 @@
 -- Load plugins
 require("plugins")
+require("config")
 
 -- Load defaults
 require('theme')
@@ -28,19 +29,23 @@ require("nv-web-devicons")
 
 -- LSP
 require('lsp')
-require('lsp.lua-ls')
 require('lsp.bash-ls')
-require('lsp.js-ts-ls')
-require('lsp.python-ls')
-require('lsp.json-ls')
-require('lsp.yaml-ls')
-require('lsp.vim-ls')
-require('lsp.graphql-ls')
+require('lsp.clangd')
 require('lsp.css-ls')
 require('lsp.docker-ls')
-require('lsp.html-ls')
 require('lsp.efm-general-ls')
+require('lsp.graphql-ls')
+require('lsp.html-ls')
+require('lsp.js-ts-ls')
+require('lsp.json-ls')
+require('lsp.lua-ls')
+require('lsp.python-ls')
+require('lsp.svelte-ls')
+require('lsp.tailwindcss-ls')
+require('lsp.terraform-ls')
+require('lsp.vim-ls')
 require('lsp.virtual_text')
+require('lsp.yaml-ls')
 
 -- Load .vim config
 vim.cmd("source ~/.config/nvim/vim/nv-nerdtree.vim")

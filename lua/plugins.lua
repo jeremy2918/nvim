@@ -43,6 +43,8 @@ return require("packer").startup(
 		}
         -- Language server client
         use {"neovim/nvim-lspconfig"}
+		use {"glepnir/lspsaga.nvim"}
+		use {"kabouzeid/nvim-lspinstall"}
         -- Auto completion
         use {"hrsh7th/nvim-compe"}
         -- Auto close tags
