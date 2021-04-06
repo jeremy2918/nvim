@@ -6,7 +6,7 @@ return require("packer").startup(
         -- Plugin Manager
         use {"wbthomason/packer.nvim", opt = true}
         -- Theme
-        use {"joshdick/onedark.vim"}
+		use {"christianchiarulli/nvcode-color-schemes.vim"}
         -- Icons
         use {"kyazdani42/nvim-web-devicons"}
         -- Status bar theme
@@ -31,7 +31,16 @@ return require("packer").startup(
         -- Dev icons
         use {"ryanoasis/vim-devicons"}
         -- Autoformat
-        use {"sbdchd/neoformat"}
+        use {"prettier/vim-prettier",
+			run = {
+				"npm install"
+			}
+		}
+		use {"a-vrma/black-nvim", 
+			run = {
+				":UpdateRemotePlugins"
+			}
+		}
         -- Language server client
         use {"neovim/nvim-lspconfig"}
         -- Auto completion
@@ -48,8 +57,6 @@ return require("packer").startup(
 		use {"terrortylor/nvim-comment"}
 		-- Start Screen
 		use {"mhinz/vim-startify"}
-		-- Emmet
-		use {"mattn/emmet-vim"}
 		-- Snippets
 		use {"SirVer/ultisnips"}
     end

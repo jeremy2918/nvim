@@ -28,7 +28,7 @@ MUtils.completion_confirm=function()
       return npairs.esc("<c-y>")
     else
       vim.defer_fn(function()
-        vim.fn["compe#confirm"]("<cr>")
+        vim.fn["compe#confirm"]("<CR>")
       end, 20)
       return npairs.esc("<c-n>")
     end
@@ -38,4 +38,4 @@ MUtils.completion_confirm=function()
 end
 
 
-remap('i' , '<CR>','v:lua.MUtils.completion_confirm()', {expr = true , noremap = true})
+vim.api.nvim_set_keymap('i', '<CR>', 'v:lua.MUtils.completion_confirm()', {expr = true , noremap = true})

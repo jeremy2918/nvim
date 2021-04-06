@@ -1,5 +1,3 @@
 -- Format on save
-vim.api.nvim_exec([[augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END]], true)
+vim.cmd("let g:prettier#autoformat = 1")
+vim.cmd("let g:prettier#autoformat_require_pragma = 0")

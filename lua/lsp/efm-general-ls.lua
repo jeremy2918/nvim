@@ -1,5 +1,9 @@
 -- Example configuations here: https://github.com/mattn/efm-langserver
 -- python
+local black = {
+	formatCommand = "black ${INPUT}",
+	formatStdin = true
+}
 local flake8 = {
     LintCommand = "flake8 --ignore=E501 --stdin-display-name ${INPUT} -",
     lintStdin = true,
@@ -54,14 +58,16 @@ local markdownPandocFormat = {
 require"lspconfig".efm.setup {
     -- init_options = {initializationOptions},
     init_options = {documentFormatting = true, codeAction = false},
-    filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml", "markdown"},
+    filetypes = {"lua", "python", "javascriptreact", "javascript", "typescript", "typescriptreact", "sh", "html", "css", "json", "yaml", "markdown"},
     settings = {
         rootMarkers = {".git/"},
         languages = {
             lua = {luaFormat},
-            python = {isort, yapf},
+            python = {black, isort, yapf},
             javascriptreact = {prettier, eslint},
+            typescriptreact  = {prettier, eslint},
             javascript = {prettier, eslint},
+            typescript  = {prettier, eslint},
             sh = {shellcheck, shfmt},
             html = {prettier},
             css = {prettier},

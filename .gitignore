@@ -8,3 +8,4 @@
 **/autoload/plug.vim
 plugged
 
+node_modules/

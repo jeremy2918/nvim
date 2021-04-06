@@ -6,19 +6,18 @@ require('theme')
 require('mappings')
 require('settings')
 
+
 -- Load config
 require("nv-barbar")
 require("nv-closetag")
 require("nv-colorizer")
 require("nv-comment")
 require("nv-compe")
-require("nv-emmet")
 require("nv-gitsigns")
 require("nv-indentLine")
 require("nv-lspconfig")
 require("nv-lspkind")
 require("nv-nvim-autopairs")
-require("nv-nerdtree")
 require("nv-prettier")
 require("nv-startify")
 require("nv-statusline")
@@ -42,3 +41,6 @@ require('lsp.docker-ls')
 require('lsp.html-ls')
 require('lsp.efm-general-ls')
 require('lsp.virtual_text')
+
+-- Load .vim config
+vim.cmd("source ~/.config/nvim/vim/nv-nerdtree.vim")

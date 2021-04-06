@@ -32,3 +32,9 @@ git clone https://github.com/wbthomason/packer.nvim\
 ### TODO
 
 - Add snippets to autocompletion menu
+
+- Python LSP
+
+- Set up prettier
+
+- LSP to avoid importing with file type
