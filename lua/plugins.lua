@@ -6,7 +6,7 @@ return require("packer").startup(
         -- Plugin Manager
         use {"wbthomason/packer.nvim", opt = true}
         -- Theme
-		use {"christianchiarulli/nvcode-color-schemes.vim"}
+		use {"jeremy2918/nv-colorschemes"}
         -- Icons
         use {"kyazdani42/nvim-web-devicons"}
         -- Status bar theme
