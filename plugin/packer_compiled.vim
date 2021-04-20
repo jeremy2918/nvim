@@ -60,9 +60,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jem/.local/share/nvim/site/pack/packer/start/nerdtree-git-plugin"
   },
-  ["nvcode-color-schemes.vim"] = {
+  ["nv-colorschemes"] = {
     loaded = true,
-    path = "/Users/jem/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
+    path = "/Users/jem/.local/share/nvim/site/pack/packer/start/nv-colorschemes"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -83,6 +83,10 @@ _G.packer_plugins = {
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/jem/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/Users/jem/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
   ["nvim-treesitter"] = {
     loaded = true,

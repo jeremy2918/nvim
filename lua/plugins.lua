@@ -36,14 +36,8 @@ return require("packer").startup(
 				"npm install"
 			}
 		}
-		use {"a-vrma/black-nvim", 
-			run = {
-				":UpdateRemotePlugins"
-			}
-		}
         -- Language server client
         use {"neovim/nvim-lspconfig"}
-		use {"glepnir/lspsaga.nvim"}
 		use {"kabouzeid/nvim-lspinstall"}
         -- Auto completion
         use {"hrsh7th/nvim-compe"}
